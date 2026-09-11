@@ -1,0 +1,60 @@
+# ========================
+# ICMS - .gitignore
+# ========================
+
+# ---- Java / Maven Backend ----
+backend/target/
+backend/*.log
+backend/.mvn/
+backend/mvnw
+backend/mvnw.cmd
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.zip
+*.tar.gz
+*.rar
+
+# ---- Spring Boot ----
+backend/src/main/resources/application-mysql.properties
+
+# ---- Node / React Frontend ----
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/*.local
+frontend/coverage/
+
+# ---- Environment / Secrets ----
+.env
+.env.local
+.env.*.local
+
+# ---- IDE Files ----
+.idea/
+*.iml
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ---- OS Files ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Logs ----
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ---- H2 Database files ----
+*.db
+*.mv.db
+*.trace.db
