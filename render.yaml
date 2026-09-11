@@ -4,10 +4,10 @@ services:
     runtime: java
     region: singapore
     plan: free
-    buildCommand: cd backend && mvn clean package -DskipTests
+    buildCommand: cd backend && chmod +x mvnw && ./mvnw clean package -DskipTests
     startCommand: java -jar backend/target/icms-backend-0.0.1-SNAPSHOT.jar
     envVars:
       - key: SPRING_PROFILES_ACTIVE
         value: h2
-      - key: PORT
-        value: 8080
+      - key: JAVA_VERSION
+        value: "17"
