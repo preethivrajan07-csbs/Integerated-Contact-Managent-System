@@ -7,6 +7,13 @@ services:
     dockerfilePath: ./Dockerfile
     envVars:
       - key: SPRING_PROFILES_ACTIVE
-        value: h2
+        value: postgres
       - key: PORT
         value: "8080"
+
+databases:
+  - name: icms-db
+    region: singapore
+    plan: free
+    databaseName: icmsdb
+    user: icmsuser
